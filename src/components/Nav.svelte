@@ -1,11 +1,13 @@
 <script>
-	export async function load({ fetch, params }) {
-		console.log('Params: ', params);
+	import { goto } from '$app/navigation';
+
+	function redirectToHome() {
+		goto('/');
 	}
 </script>
 
 <nav>
-	<a href="/">Movie Database</a>
+	<h2 on:click={redirectToHome}>Movie Database</h2>
 </nav>
 
 <style>
