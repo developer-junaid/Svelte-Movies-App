@@ -1,6 +1,8 @@
 <script context="module">
+	import { onMount } from 'svelte';
+
 	// API requests here
-	export async function load({ fetch }) {
+	onMount(async () => {
 		const res = await fetch(
 			`https://api.themoviedb.org/3/movie/popular/?api_key=${import.meta.env.VITE_API}`
 		);
@@ -13,7 +15,7 @@
 				props: { popular: data.results }
 			};
 		}
-	}
+	});
 </script>
 
 <script>

@@ -1,13 +1,5 @@
-<script>
-	import { goto } from '$app/navigation';
-
-	function redirectToHome() {
-		goto('/');
-	}
-</script>
-
 <nav>
-	<h2 on:click={redirectToHome}>Movie Database</h2>
+	<a href="/">Movie Database</a>
 </nav>
 
 <style>
