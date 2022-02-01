@@ -1,3 +1,9 @@
+<script>
+	export async function load({ fetch, params }) {
+		console.log('Params: ', params);
+	}
+</script>
+
 <nav>
 	<a href="/">Movie Database</a>
 </nav>
